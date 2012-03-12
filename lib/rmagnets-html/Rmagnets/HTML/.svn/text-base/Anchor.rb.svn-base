@@ -1,0 +1,29 @@
+class RPHTML::Element::Anchor
+  include RPHTML::Abstract::Element  
+
+  ###############
+  #  Accessors  #
+  ###############
+
+  # tag info
+  attr_accessor :is_local_anchor, :href
+  
+  ###############
+  #  Constants  #
+  ###############
+
+  # Default tag or container tag
+  Tag           = "a"
+  
+  ###############################
+  #  xml_node_creation_actions  #
+  ###############################
+
+  def xml_node_creation_actions( self_xml_node )
+    super( self_xml_node )
+    if self.href
+      self_xml_node[ 'href' ] = self.href.to_s
+    end
+  end
+  
+end
