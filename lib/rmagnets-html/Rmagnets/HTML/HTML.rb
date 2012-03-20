@@ -15,7 +15,11 @@ class ::Rmagnets::HTML::HTML
 	
 	attr_order :head, :body
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 
 		self_as_html_node.add_child( head.to_html_node )
 		self_as_html_node.add_child( body.to_html_node )

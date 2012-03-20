@@ -14,7 +14,7 @@ module ::Rmagnets
       include Stub
 		  include ::Rmagnets::View
 		end
-		class PageAnchor < Anchor
+		class PageAnchor
       module Stub
       end
       include Stub
@@ -301,7 +301,6 @@ require_relative 'rmagnets-html/Rmagnets/HTML/Table/Row/Data.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/Table/Row.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/Table.rb'
 
-require_relative 'rmagnets-html/Rmagnets/HTML/Text/Date.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/Text/H1.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/Text/H2.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/Text/H3.rb'
@@ -314,3 +313,5 @@ require_relative 'rmagnets-html/Rmagnets/HTML/Text/Span.rb'
 require_relative 'rmagnets-html/Rmagnets/HTML/HTML.rb'
 
 require_relative 'rmagnets-html/Rmagnets/Document.rb'
+
+require_relative 'rmagnets-html/Rmagnets/HTML/Text/Date.rb'

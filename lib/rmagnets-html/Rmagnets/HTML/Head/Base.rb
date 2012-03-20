@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Head::Base
 	
 	attr_order          [ ]
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		if address
 			self_as_html_node[ 'href' ]	= address

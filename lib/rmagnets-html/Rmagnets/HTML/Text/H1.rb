@@ -8,5 +8,5 @@ class ::Rmagnets::HTML::Text::H1
 	attr_view		:content
 
 	attr_order	:content
-    
+  
 end

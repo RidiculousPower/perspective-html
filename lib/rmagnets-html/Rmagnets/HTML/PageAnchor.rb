@@ -1,12 +1,38 @@
 
-class ::Rmagnets::HTML::PageAnchor < ::Rmagnets::HTML::Anchor
+class ::Rmagnets::HTML::PageAnchor
 
-	attr_rename  :url, :subsection
-	attr_unbind  :address
-
-  configuration_procs.clear
+  include ::Rmagnets::View
   
-	configuration do |self_as_html_node|
+	attr_required_text   :subsection
+
+	attr_required_view   :text
+	attr_alias					 :content, :text
+
+	attr_order           :content
+  
+	################
+  #  initialize  #
+  ################
+
+  def initialize( text = nil, subsection = nil )
+    
+    super()
+    
+    if text
+      self.text = text
+    end
+    
+    if subsection
+      self.subsection = subsection
+    end
+    
+  end
+
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 
 		self_as_html_node[ 'href' ]	= '#' + subsection
 

@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Body
 	
 	attr_order		       :content
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 
 		if xml_namespace
 			self_as_html_node[ 'xmlns' ] = xml_namespace

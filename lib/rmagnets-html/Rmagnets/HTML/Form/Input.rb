@@ -1,7 +1,7 @@
 
 class ::Rmagnets::HTML::Form::Input
 
-  include ::Rmagnets::View  
+#  include ::Rmagnets::View  
 
   ContainerTag = 'input'
     
@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Form::Input
 
   attr_order          :name
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		if name
 		  self_as_html_node[ 'name' ] = name.to_s

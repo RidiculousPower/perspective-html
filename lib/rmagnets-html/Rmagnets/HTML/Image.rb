@@ -3,7 +3,7 @@ class ::Rmagnets::HTML::Image
 
   include ::Rmagnets::View  
 
-  ContainerTag           = 'img'
+  ContainerTag = 'img'
 
 	attr_required_text	:source, :alternate_text
 	attr_text					  :height, :width, :long_description_address,
@@ -11,7 +11,11 @@ class ::Rmagnets::HTML::Image
 
   attr_order          :source
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 
 		self_as_html_node[ 'src' ] = source
 		self_as_html_node[ 'alt' ] = alternate_text

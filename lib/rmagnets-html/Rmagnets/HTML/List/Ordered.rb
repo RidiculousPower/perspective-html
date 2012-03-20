@@ -9,7 +9,11 @@ class ::Rmagnets::HTML::List::Ordered
 
 	attr_order	:items
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 
 		if items.is_a?( Array )
 

@@ -3,6 +3,30 @@ require_relative '../../../lib/rmagnets-html.rb'
 
 describe ::Rmagnets::HTML::Anchor do
 
+  ################
+  #  initialize  #
+  ################
+
+  it 'can be initialized with link text' do
+    
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    
+    link = ::Rmagnets::HTML::Anchor.new( link_text )
+    link.text.should == link_text
+    
+  end
+  
+  it 'can be initialized with link text and url' do
+    
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link.url.should == link_url
+    
+  end
+
   ##################
   #  to_html_node  #
   ##################
@@ -23,6 +47,91 @@ describe ::Rmagnets::HTML::Anchor do
     link_html_node[ 'href' ].should == link_url
     link_html_node.content.should == link_text
 
+  end
+
+  #-------------#
+  #  mime_type  #
+  #-------------#
+  
+  it 'can specify mime type' do
+
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link.mime_type = 'text/html'
+    
+    link_html_node = link.to_html_node
+
+    link_html_node[ 'type' ].should == link.mime_type
+    
+  end
+  
+  #------------#
+  #  language  #
+  #------------#
+
+  it 'can specify language' do
+
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link.language = 'en'
+    
+    link_html_node = link.to_html_node
+
+    link_html_node[ 'hreflang' ].should == link.language
+    
+  end
+
+  #-----------------#
+  #  optimal_media  #
+  #-----------------#
+
+  it 'can specify optimal media' do
+
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link.optimal_media = 'all'
+    
+    link_html_node = link.to_html_node
+
+    link_html_node[ 'media' ].should == link.optimal_media
+    
+  end
+
+  #----------#
+  #  target  #
+  #----------#
+
+  it 'can specify target' do
+
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    
+    
+    link_html_node = link.to_html_node
+
+    link_html_node[ 'target' ].should == link_url
+    
+  end
+
+  #------------------------#
+  #  relationship_to_link  #
+  #------------------------#
+
+  it 'can specify relationship of current document to link' do
+
+    link_url  = 'http://example.com'
+    link_text = 'Example!'
+    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    
+    
+    link_html_node = link.to_html_node
+
+    link_html_node[ 'rel' ].should == link_url
+    
   end
 
 end

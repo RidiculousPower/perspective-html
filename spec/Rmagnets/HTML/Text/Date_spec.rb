@@ -18,6 +18,7 @@ describe ::Rmagnets::HTML::Text::Date do
     date_html_node = date.to_html_node
 
     date_html_node.name.should == 'span'
+
     date_html_node.children[ 0 ].name.should == 'span'
     date_html_node.children[ 1 ].name.should == 'span'
     date_html_node.children[ 2 ].name.should == 'span'

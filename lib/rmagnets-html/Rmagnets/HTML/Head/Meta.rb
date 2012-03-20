@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Head::Meta
 
 	attr_order          [ ]
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		# FIX - author, description, keywords, generator, revised, others
 		if name

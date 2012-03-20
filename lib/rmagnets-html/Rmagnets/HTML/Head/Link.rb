@@ -11,7 +11,11 @@ class ::Rmagnets::HTML::Head::Link
 
 	attr_order    [ ]
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		if location
 			self_as_html_node[ 'href' ] = location

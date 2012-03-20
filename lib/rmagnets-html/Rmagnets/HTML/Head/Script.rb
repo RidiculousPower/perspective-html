@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Head::Script
 
 	attr_order          [ ]
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		# FIX - MIME type
 		self_as_html_node[ 'type' ] = mime_type

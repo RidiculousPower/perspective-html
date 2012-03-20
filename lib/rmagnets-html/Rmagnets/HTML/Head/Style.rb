@@ -3,14 +3,18 @@ class ::Rmagnets::HTML::Head::Style
 	
   include ::Rmagnets::View  
 
-  ContainerTag 	= 'style'
+  ContainerTag = 'style'
 	Type					=	'text/css'
 
 	attr_view	  :media
 
 	attr_order  [ ]
 
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		# only one possible style type - text/css
 		self_as_html_node[ 'type' ] = Type

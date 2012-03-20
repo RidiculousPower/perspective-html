@@ -3,7 +3,7 @@ class ::Rmagnets::HTML::Text::TextArea
 
   include ::Rmagnets::View  
 
-  ContainerTag           = 'textarea'
+  ContainerTag = 'textarea'
   
 	attr_required_text	:content
 	attr_number					:columns, :rows

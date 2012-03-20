@@ -8,14 +8,18 @@ class ::Rmagnets::HTML::Form::Error
   ###############
 
   # Default tag or container tag
-  ContainerTag = "span"
+  ContainerTag = 'span'
   
   attr_required_view		:text, :for_input
 	attr_alias						:content, :text
 	
 	attr_order            :text
 	
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		for_input_name = nil
 		if for_input.is_a?( ::Rmagnets::HTML::Form::Input::Stub )

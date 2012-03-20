@@ -10,7 +10,11 @@ class ::Rmagnets::HTML::Form::Label
 	
 	attr_order          :text
 	
-	configuration do |self_as_html_node|
+	###############
+  #  configure  #
+  ###############
+
+	configure do |self_as_html_node|
 		
 		self_as_html_node[ 'for' ] = for_input
 		
