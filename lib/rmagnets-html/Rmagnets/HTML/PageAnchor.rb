@@ -3,6 +3,8 @@ class ::Rmagnets::HTML::PageAnchor
 
   include ::Rmagnets::View
   
+  ContainerTag = 'a'
+  
 	attr_required_text   :subsection
 
 	attr_required_view   :text

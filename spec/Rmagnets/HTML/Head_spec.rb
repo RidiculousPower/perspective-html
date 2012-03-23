@@ -40,6 +40,17 @@ describe ::Rmagnets::HTML::Head do
     head_html_node.name.should == 'head'
     head_html_node.children[0].content.should == 'some path info'
     
+    ###############
+
+    head = ::Rmagnets::HTML::Head.new
+
+    head.title.content = 'Title'
+
+    head_html_node = head.to_html_node
+
+    head_html_node.name.should == 'head'
+    head_html_node.children[0].content.should == 'Title'
+    
   end
 
 end

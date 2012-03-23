@@ -109,11 +109,11 @@ describe ::Rmagnets::HTML::Anchor do
     link_url  = 'http://example.com'
     link_text = 'Example!'
     link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
-    
+    link.target = '_self'
     
     link_html_node = link.to_html_node
 
-    link_html_node[ 'target' ].should == link_url
+    link_html_node[ 'target' ].should == link.target
     
   end
 
@@ -126,11 +126,11 @@ describe ::Rmagnets::HTML::Anchor do
     link_url  = 'http://example.com'
     link_text = 'Example!'
     link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
-    
+    link.relationship_to_link = 'alternate'
     
     link_html_node = link.to_html_node
 
-    link_html_node[ 'rel' ].should == link_url
+    link_html_node[ 'rel' ].should == link.relationship_to_link
     
   end
 

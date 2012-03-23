@@ -250,7 +250,7 @@ class ::Rmagnets::HTML::Anchor
     'uz' => 'Uzbek',
     # Venda	 
     'vi' => 'Vietnamese',
-    'vo' => 'Volapüvo',
+    #'vo' => 'Volapüvo',
     'wa' => 'Wallon',
     'cy' => 'Welsh',
     'wo' => 'Wolof',
