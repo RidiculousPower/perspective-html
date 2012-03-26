@@ -7,7 +7,6 @@ class ::Rmagnets::HTML::HTML
   
 	attr_view	 :head, ::Rmagnets::HTML::Head
 	attr_alias :title, head.title
-	puts 'wtf: ' + head.title.__route__.to_s
   
 
 	attr_view  :body, ::Rmagnets::HTML::Body
