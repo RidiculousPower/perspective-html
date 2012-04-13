@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Image < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Image < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

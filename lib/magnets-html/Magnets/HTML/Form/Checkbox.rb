@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Checkbox < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Checkbox < ::Magnets::HTML::Form::Input
 
 	attr_true_false	:checked
 	

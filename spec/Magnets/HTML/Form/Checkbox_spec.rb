@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Checkbox do
+describe ::Magnets::HTML::Form::Checkbox do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Checkbox do
 
   it 'can render an HTML checkbox tag (<input type="checkbox">)' do
 
-    checkbox = ::Rmagnets::HTML::Form::Checkbox.new
+    checkbox = ::Magnets::HTML::Form::Checkbox.new
 
     checkbox.name = :some_checkbox
 

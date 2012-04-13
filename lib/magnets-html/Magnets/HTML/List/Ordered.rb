@@ -1,11 +1,11 @@
 
-class ::Rmagnets::HTML::List::Ordered
+class ::Magnets::HTML::List::Ordered
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'ol'
 
-	attr_views	:items, ::Rmagnets::HTML::List::Item
+	attr_views	:items, ::Magnets::HTML::List::Item
 
 	attr_order	:items
 
@@ -35,13 +35,13 @@ class ::Rmagnets::HTML::List::Ordered
 	
 	def add_list_item( self_as_html_node, content_item )
 
-		if content_item.is_a?( ::Rmagnets::HTML::List::Item::Stub )
+		if content_item.is_a?( ::Magnets::HTML::List::Item )
 
 			self_as_html_node.add_child( content_item.to_html_node )
 
 		else
 
-			list_item = ::Rmagnets::HTML::List::Item.new
+			list_item = ::Magnets::HTML::List::Item.new
 			list_item.content = content_item
 			self_as_html_node.add_child( list_item.to_html_node )
 

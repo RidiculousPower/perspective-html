@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Form
+class ::Magnets::HTML::Form
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'form'
 

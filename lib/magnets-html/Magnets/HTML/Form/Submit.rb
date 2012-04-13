@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Submit < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Submit < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

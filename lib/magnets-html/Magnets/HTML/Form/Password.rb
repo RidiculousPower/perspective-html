@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Password < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Password < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

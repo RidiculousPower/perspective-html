@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Form::Option
+class ::Magnets::HTML::Form::Option
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'option'
   

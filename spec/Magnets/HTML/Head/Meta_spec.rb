@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head::Meta do
+describe ::Magnets::HTML::Head::Meta do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Head::Meta do
 
   it 'can render an HTML META tag(<meta ...>)' do
 
-    meta = ::Rmagnets::HTML::Head::Meta.new
+    meta = ::Magnets::HTML::Head::Meta.new
 
     meta_content  = 'Meta!'
 

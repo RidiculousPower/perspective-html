@@ -1,11 +1,11 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::List::Item do
+describe ::Magnets::HTML::List::Item do
 
   it "can render an HTML LI tag (<li...>)" do
     
-    list_item = ::Rmagnets::HTML::List::Item.new
+    list_item = ::Magnets::HTML::List::Item.new
 
     list_item_text = 'Example!'
 

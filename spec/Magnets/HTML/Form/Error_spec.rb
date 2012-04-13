@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Error do
+describe ::Magnets::HTML::Form::Error do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Error do
 
   it 'can render an HTML error tag (<error for="...">)' do
 
-    error = ::Rmagnets::HTML::Form::Error.new
+    error = ::Magnets::HTML::Form::Error.new
 
     error_text  = 'Error!'
     error_for   = 'input_name'

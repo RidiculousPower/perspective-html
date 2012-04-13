@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::List::Unordered < ::Rmagnets::HTML::List::Ordered
+class ::Magnets::HTML::List::Unordered < ::Magnets::HTML::List::Ordered
   
   ContainerTag = 'ul'
 

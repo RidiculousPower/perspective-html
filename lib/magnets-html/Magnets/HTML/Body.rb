@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Body
+class ::Magnets::HTML::Body
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'body'
 

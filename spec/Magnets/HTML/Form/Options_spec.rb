@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Option do
+describe ::Magnets::HTML::Form::Option do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Option do
 
   it 'can render an HTML OPTION tag (<option>)' do
 
-    option = ::Rmagnets::HTML::Form::Option.new
+    option = ::Magnets::HTML::Form::Option.new
 
     option_value  = 'Example!'
     option_text   = 'Example Text!'

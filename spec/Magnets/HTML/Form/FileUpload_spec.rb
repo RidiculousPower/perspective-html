@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::FileUpload do
+describe ::Magnets::HTML::Form::FileUpload do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::FileUpload do
 
   it 'can render an HTML file_upload tag (<input type="file">)' do
 
-    file_upload = ::Rmagnets::HTML::Form::FileUpload.new
+    file_upload = ::Magnets::HTML::Form::FileUpload.new
 
     file_upload.name = :some_file_upload
 

@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Head::Link
+class ::Magnets::HTML::Head::Link
 	
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'link'
 

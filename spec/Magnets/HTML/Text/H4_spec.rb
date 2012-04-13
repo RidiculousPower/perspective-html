@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Text::H4 do
+describe ::Magnets::HTML::Text::H4 do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Text::H4 do
 
   it 'can render an HTML H4 tag(<h4 ...>)' do
 
-    h4 = ::Rmagnets::HTML::Text::H4.new
+    h4 = ::Magnets::HTML::Text::H4.new
 
     h4_content = 'Example!'
 

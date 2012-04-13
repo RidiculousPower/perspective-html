@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::HR do
+describe ::Magnets::HTML::HR do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::HR do
 
   it "can render an HTML HR tag (<hr>)." do
 
-    hr = ::Rmagnets::HTML::HR.new
+    hr = ::Magnets::HTML::HR.new
 
     hr_html_node = hr.to_html_node
 

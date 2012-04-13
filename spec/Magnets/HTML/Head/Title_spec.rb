@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head::Title do
+describe ::Magnets::HTML::Head::Title do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Head::Title do
 
   it "can render an HTML TITLE tag (<title...>)" do
 
-    title = ::Rmagnets::HTML::Head::Title.new
+    title = ::Magnets::HTML::Head::Title.new
 
     title_text = 'Example!'
 

@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::FileUpload < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::FileUpload < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

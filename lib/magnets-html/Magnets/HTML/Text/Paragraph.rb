@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Text::Paragraph
+class ::Magnets::HTML::Text::Paragraph
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'p'
   

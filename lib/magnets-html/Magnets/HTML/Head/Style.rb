@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Head::Style
+class ::Magnets::HTML::Head::Style
 	
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'style'
 	Type					=	'text/css'

@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::List::Item
+class ::Magnets::HTML::List::Item
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
   
   ContainerTag = 'li'
 

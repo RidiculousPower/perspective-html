@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Div
+class ::Magnets::HTML::Div
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'div'
   

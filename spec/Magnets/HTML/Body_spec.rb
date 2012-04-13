@@ -1,11 +1,11 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Body do
+describe ::Magnets::HTML::Body do
 
   it "can render an HTML BODY tag (<body...>)" do
     
-    body = ::Rmagnets::HTML::Body.new
+    body = ::Magnets::HTML::Body.new
 
     body_text = 'Example!'
 

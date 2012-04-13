@@ -1,11 +1,11 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Button do
+describe ::Magnets::HTML::Button do
 
   it "can render an HTML BUTTON tag (<button...>)" do
     
-    button = ::Rmagnets::HTML::Button.new
+    button = ::Magnets::HTML::Button.new
 
     button_text = 'Example!'
 

@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Image do
+describe ::Magnets::HTML::Form::Image do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Image do
 
   it 'can render an HTML image tag (<input type="image">)' do
 
-    image = ::Rmagnets::HTML::Form::Image.new
+    image = ::Magnets::HTML::Form::Image.new
     
     image.name = :some_image
     

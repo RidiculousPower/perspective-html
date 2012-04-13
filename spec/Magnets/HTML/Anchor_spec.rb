@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Anchor do
+describe ::Magnets::HTML::Anchor do
 
   ################
   #  initialize  #
@@ -12,7 +12,7 @@ describe ::Rmagnets::HTML::Anchor do
     link_url  = 'http://example.com'
     link_text = 'Example!'
     
-    link = ::Rmagnets::HTML::Anchor.new( link_text )
+    link = ::Magnets::HTML::Anchor.new( link_text )
     link.text.should == link_text
     
   end
@@ -22,7 +22,7 @@ describe ::Rmagnets::HTML::Anchor do
     link_url  = 'http://example.com'
     link_text = 'Example!'
     
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.url.should == link_url
     
   end
@@ -33,7 +33,7 @@ describe ::Rmagnets::HTML::Anchor do
 
   it 'can render an HTML anchor with a URI (<a href="...://..."...>)' do
 
-    link = ::Rmagnets::HTML::Anchor.new
+    link = ::Magnets::HTML::Anchor.new
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
@@ -57,7 +57,7 @@ describe ::Rmagnets::HTML::Anchor do
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.mime_type = 'text/html'
     
     link_html_node = link.to_html_node
@@ -74,7 +74,7 @@ describe ::Rmagnets::HTML::Anchor do
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.language = 'en'
     
     link_html_node = link.to_html_node
@@ -91,7 +91,7 @@ describe ::Rmagnets::HTML::Anchor do
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.optimal_media = 'all'
     
     link_html_node = link.to_html_node
@@ -108,7 +108,7 @@ describe ::Rmagnets::HTML::Anchor do
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.target = '_self'
     
     link_html_node = link.to_html_node
@@ -125,7 +125,7 @@ describe ::Rmagnets::HTML::Anchor do
 
     link_url  = 'http://example.com'
     link_text = 'Example!'
-    link = ::Rmagnets::HTML::Anchor.new( link_text, link_url )
+    link = ::Magnets::HTML::Anchor.new( link_text, link_url )
     link.relationship_to_link = 'alternate'
     
     link_html_node = link.to_html_node

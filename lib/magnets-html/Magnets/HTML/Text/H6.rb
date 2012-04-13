@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Text::H6 < ::Rmagnets::HTML::Text::H5
+class ::Magnets::HTML::Text::H6 < ::Magnets::HTML::Text::H5
 
   ContainerTag = 'h6'
     

@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Text::TextArea
+class ::Magnets::HTML::Text::TextArea
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'textarea'
   

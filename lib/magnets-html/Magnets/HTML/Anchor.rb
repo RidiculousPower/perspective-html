@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Anchor
+class ::Magnets::HTML::Anchor
 	
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'a'
 
@@ -69,15 +69,15 @@ class ::Rmagnets::HTML::Anchor
   ##############
 
 	#language.validate do |language_code|
-	#  return ::Rmagnets::HTML::Anchor::Languages.has_key?( language_code )
+	#  return ::Magnets::HTML::Anchor::Languages.has_key?( language_code )
   #end
   #
   #target.validate do |target_value|
-	#  return ::Rmagnets::HTML::Anchor::Targets.has_key?( language_code )
+	#  return ::Magnets::HTML::Anchor::Targets.has_key?( language_code )
   #end
   #
   #target.validate do |relationship_value|
-	#  return ::Rmagnets::HTML::Anchor::Relationships.has_key?( relationship_value )
+	#  return ::Magnets::HTML::Anchor::Relationships.has_key?( relationship_value )
   #end
 
 	###########################################  Language  ###########################################

@@ -1,11 +1,11 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Div do
+describe ::Magnets::HTML::Div do
 
   it "can render an HTML DIV tag (<div>)" do
     
-    div = ::Rmagnets::HTML::Div.new
+    div = ::Magnets::HTML::Div.new
 
     div_text = 'Example!'
 

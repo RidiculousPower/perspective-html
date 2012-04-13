@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Text::Span do
+describe ::Magnets::HTML::Text::Span do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Text::Span do
 
   it 'can render an HTML SPAN tag(<span ...>)' do
 
-    span = ::Rmagnets::HTML::Text::Span.new
+    span = ::Magnets::HTML::Text::Span.new
 
     span_content = 'Example!'
 

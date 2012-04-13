@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head do
+describe ::Magnets::HTML::Head do
 
   ##################
   #  to_html_node  #
@@ -9,20 +9,20 @@ describe ::Rmagnets::HTML::Head do
 
   it "can render an HTML HEAD tag (<head>)." do
 
-    module ::Rmagnets
+    module ::Magnets
       def self.request
         return nil
       end
     end
 
-    head = ::Rmagnets::HTML::Head.new
+    head = ::Magnets::HTML::Head.new
 
     head_html_node = head.to_html_node
 
     head_html_node.name.should == 'head'
     head_html_node.children[0].content.should == 'Untitled'
 
-    module ::Rmagnets
+    module ::Magnets
       class MockRequest
         def path_info
           return 'some path info'
@@ -33,7 +33,7 @@ describe ::Rmagnets::HTML::Head do
       end
     end
 
-    head = ::Rmagnets::HTML::Head.new
+    head = ::Magnets::HTML::Head.new
 
     head_html_node = head.to_html_node
 
@@ -42,7 +42,7 @@ describe ::Rmagnets::HTML::Head do
     
     ###############
 
-    head = ::Rmagnets::HTML::Head.new
+    head = ::Magnets::HTML::Head.new
 
     head.title.content = 'Title'
 

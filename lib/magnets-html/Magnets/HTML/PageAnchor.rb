@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::PageAnchor
+class ::Magnets::HTML::PageAnchor
 
-  include ::Rmagnets::View
+  include ::Magnets::View
   
   ContainerTag = 'a'
   

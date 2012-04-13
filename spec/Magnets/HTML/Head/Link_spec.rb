@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head::Link do
+describe ::Magnets::HTML::Head::Link do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Head::Link do
 
   it 'can render an HTML LINK tag(<link ...>)' do
 
-    link = ::Rmagnets::HTML::Head::Link.new
+    link = ::Magnets::HTML::Head::Link.new
 
     link_location  = 'http://example.com'
 

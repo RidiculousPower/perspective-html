@@ -1,23 +1,23 @@
 
-require_relative '../../lib/rmagnets-html.rb'
+require_relative '../../lib/magnets-html.rb'
 
-describe ::Rmagnets::Document do
+describe ::Magnets::Document do
 
   it "can render an HTML Document." do
     
-    module ::Rmagnets
+    module ::Magnets
       def self.request
         return nil
       end
     end
     
-    document  = ::Rmagnets::Document.new
+    document  = ::Magnets::Document.new
 
     document.title.content = 'Title'
 
-    body_content1 = ::Rmagnets::HTML::Text::Paragraph.new
+    body_content1 = ::Magnets::HTML::Text::Paragraph.new
     body_content1.content = 'Content!'
-    body_content2 = ::Rmagnets::HTML::Text::Paragraph.new
+    body_content2 = ::Magnets::HTML::Text::Paragraph.new
     body_content2.content = 'More Content!'
     
     document.body.content = [ body_content1, body_content2 ]

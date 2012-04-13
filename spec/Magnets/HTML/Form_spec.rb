@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form do
+describe ::Magnets::HTML::Form do
 
   ##################
   #  to_html_node  #
@@ -9,13 +9,13 @@ describe ::Rmagnets::HTML::Form do
 
   it 'can render an HTML FORM tag (<form>)' do
 
-    form = ::Rmagnets::HTML::Form.new
+    form = ::Magnets::HTML::Form.new
 
     form_action = 'http:://example.com'
 
     form.action = form_action
 
-    form.elements = ::Rmagnets::HTML::Form::Input.new
+    form.elements = ::Magnets::HTML::Form::Input.new
     form.elements.name = :some_input
 
     form_html_node = form.to_html_node

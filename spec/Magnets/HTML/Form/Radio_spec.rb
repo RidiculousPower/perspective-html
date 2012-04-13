@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Radio do
+describe ::Magnets::HTML::Form::Radio do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Radio do
 
   it 'can render an HTML radio tag (<input type="radio">)' do
 
-    radio = ::Rmagnets::HTML::Form::Radio.new
+    radio = ::Magnets::HTML::Form::Radio.new
 
     radio.name = :some_radio
     

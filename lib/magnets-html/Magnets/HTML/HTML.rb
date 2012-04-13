@@ -1,15 +1,15 @@
 
-class ::Rmagnets::HTML::HTML
+class ::Magnets::HTML::HTML
 
-  include ::Rmagnets::View
+  include ::Magnets::View
 
   ContainerTag = 'html'
   
-	attr_view	 :head, ::Rmagnets::HTML::Head
+	attr_view	 :head, ::Magnets::HTML::Head
 	attr_alias :title, head.title
   
 
-	attr_view  :body, ::Rmagnets::HTML::Body
+	attr_view  :body, ::Magnets::HTML::Body
 	attr_alias :content, :body
 
 	attr_view  :xml_namespace

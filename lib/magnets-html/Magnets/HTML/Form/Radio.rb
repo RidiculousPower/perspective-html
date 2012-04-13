@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Radio < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Radio < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

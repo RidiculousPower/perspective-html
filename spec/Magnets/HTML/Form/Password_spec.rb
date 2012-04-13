@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Password do
+describe ::Magnets::HTML::Form::Password do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Password do
 
   it 'can render an HTML password tag (<input type="password">)' do
 
-    password = ::Rmagnets::HTML::Form::Password.new
+    password = ::Magnets::HTML::Form::Password.new
 
     password.name = :some_password
     

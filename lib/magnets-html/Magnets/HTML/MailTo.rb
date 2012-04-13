@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::MailTo < ::Rmagnets::HTML::Anchor
+class ::Magnets::HTML::MailTo < ::Magnets::HTML::Anchor
 	
 	###############
   #  configure  #

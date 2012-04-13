@@ -1,14 +1,14 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::List::Ordered do
+describe ::Magnets::HTML::List::Ordered do
 
   it "can render an HTML OL tag (<ol...>)" do
     
-    ordered_list = ::Rmagnets::HTML::List::Ordered.new
+    ordered_list = ::Magnets::HTML::List::Ordered.new
 
-    list_item_one = ::Rmagnets::HTML::List::Item.new
-    list_item_two = ::Rmagnets::HTML::List::Item.new
+    list_item_one = ::Magnets::HTML::List::Item.new
+    list_item_two = ::Magnets::HTML::List::Item.new
     
     ordered_list_item_one = 'Example One!'
     ordered_list_item_two = 'Example Two!'

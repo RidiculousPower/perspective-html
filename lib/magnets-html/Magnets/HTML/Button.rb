@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Button
+class ::Magnets::HTML::Button
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'button'
 

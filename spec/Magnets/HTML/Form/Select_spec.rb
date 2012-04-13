@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Select do
+describe ::Magnets::HTML::Form::Select do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Select do
 
   it 'can render an HTML SELECT tag (<select>)' do
 
-    select = ::Rmagnets::HTML::Form::Select.new
+    select = ::Magnets::HTML::Form::Select.new
 
     select.name = :some_select
     

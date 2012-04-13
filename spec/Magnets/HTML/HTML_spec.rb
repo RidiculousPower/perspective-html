@@ -1,20 +1,20 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::HTML do
+describe ::Magnets::HTML::HTML do
 
   it "can render an HTML HTML tag (<html>)." do
     
-    module ::Rmagnets
+    module ::Magnets
       def self.request
         return nil
       end
     end
 
-    html = ::Rmagnets::HTML::HTML.new
+    html = ::Magnets::HTML::HTML.new
 
-    head = ::Rmagnets::HTML::Head.new
-    body = ::Rmagnets::HTML::Body.new
+    head = ::Magnets::HTML::Head.new
+    body = ::Magnets::HTML::Body.new
 
     body_content = 'Some content!'
     body.content = body_content
@@ -30,7 +30,7 @@ describe ::Rmagnets::HTML::HTML do
     html_html_node.children[0].children[0].name.should == 'title'
     html_html_node.children[0].children[0].content.should == 'Untitled'
 
-    module ::Rmagnets
+    module ::Magnets
       class MockRequest
         def path_info
           return 'some path info'
@@ -41,10 +41,10 @@ describe ::Rmagnets::HTML::HTML do
       end
     end
 
-    html = ::Rmagnets::HTML::HTML.new
+    html = ::Magnets::HTML::HTML.new
 
-    head = ::Rmagnets::HTML::Head.new
-    body = ::Rmagnets::HTML::Body.new
+    head = ::Magnets::HTML::Head.new
+    body = ::Magnets::HTML::Body.new
 
     body_content = 'Some content!'
     body.content = body_content

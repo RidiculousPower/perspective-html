@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::MailTo do
+describe ::Magnets::HTML::MailTo do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::MailTo do
 
   it 'can render an HTML anchor with a mailto URI (<a href="mailto:..."...>)' do
 
-    mail = ::Rmagnets::HTML::MailTo.new
+    mail = ::Magnets::HTML::MailTo.new
 
     mail_address  = 'example@example.com'
     mail_link     = 'Example!'

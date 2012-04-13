@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Submit do
+describe ::Magnets::HTML::Form::Submit do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Submit do
 
   it 'can render an HTML submit tag (<input type="submit">)' do
 
-    submit = ::Rmagnets::HTML::Form::Submit.new
+    submit = ::Magnets::HTML::Form::Submit.new
 
     submit.name = :some_submit
     

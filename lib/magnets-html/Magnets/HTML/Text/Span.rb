@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Text::Span
+class ::Magnets::HTML::Text::Span
   
-  include ::Rmagnets::View  
+  include ::Magnets::View  
   
   ContainerTag = 'span'
 

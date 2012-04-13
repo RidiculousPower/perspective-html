@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Head::Title
+class ::Magnets::HTML::Head::Title
 
-  include ::Rmagnets::View
+  include ::Magnets::View
 
   ContainerTag = 'title'
 

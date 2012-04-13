@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Form::Label
+class ::Magnets::HTML::Form::Label
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'label'
 	

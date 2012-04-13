@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head::Base do
+describe ::Magnets::HTML::Head::Base do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Head::Base do
 
   it "can render an HTML BASE tag (<base ...>)" do
 
-    base = ::Rmagnets::HTML::Head::Base.new
+    base = ::Magnets::HTML::Head::Base.new
 
     base_address  = 'http://example.com'
     base_target = 'example_target'

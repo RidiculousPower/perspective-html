@@ -1,5 +1,5 @@
 
-class ::Rmagnets::HTML::Form::Hidden < ::Rmagnets::HTML::Form::Input
+class ::Magnets::HTML::Form::Hidden < ::Magnets::HTML::Form::Input
 
 	###############
   #  configure  #

@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Comment do
+describe ::Magnets::HTML::Comment do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Comment do
 
   it 'can render an HTML anchor with a URI (<a href="...://..."...>)' do
 
-    comment = ::Rmagnets::HTML::Comment.new
+    comment = ::Magnets::HTML::Comment.new
 
     comment_text = 'Example!'
 

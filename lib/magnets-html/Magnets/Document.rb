@@ -1,4 +1,4 @@
 
-class ::Rmagnets::Document < ::Rmagnets::HTML::HTML
+class ::Magnets::Document < ::Magnets::HTML::HTML
 	
 end

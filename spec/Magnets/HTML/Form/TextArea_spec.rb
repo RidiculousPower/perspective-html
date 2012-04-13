@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Text::TextArea do
+describe ::Magnets::HTML::Text::TextArea do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Text::TextArea do
 
   it 'can render an HTML TEXTAREA tag(<text_area ...>)' do
 
-    text_area = ::Rmagnets::HTML::Text::TextArea.new
+    text_area = ::Magnets::HTML::Text::TextArea.new
 
     text_area.name = :some_text_area
     

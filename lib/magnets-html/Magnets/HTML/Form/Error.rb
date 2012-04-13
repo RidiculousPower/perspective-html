@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Form::Error
+class ::Magnets::HTML::Form::Error
   
-  include ::Rmagnets::View
+  include ::Magnets::View
 
   ###############
   #  Constants  #
@@ -22,7 +22,7 @@ class ::Rmagnets::HTML::Form::Error
 	configure do |self_as_html_node|
 		
 		for_input_name = nil
-		if for_input.is_a?( ::Rmagnets::HTML::Form::Input::Stub )
+		if for_input.is_a?( ::Magnets::HTML::Form::Input )
 		  # if we have an input instance
 		  for_input_name = for_input.name
 		else

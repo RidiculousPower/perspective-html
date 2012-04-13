@@ -1,7 +1,7 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Image do
+describe ::Magnets::HTML::Image do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Image do
 
   it 'can render an HTML anchor with an image tag (<img...>)' do
 
-    image = ::Rmagnets::HTML::Image.new
+    image = ::Magnets::HTML::Image.new
 
     image_source          = 'http://example.com'
     image_alternate_text  = 'Example!'

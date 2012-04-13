@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Head::Meta
+class ::Magnets::HTML::Head::Meta
 	
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'meta'
 

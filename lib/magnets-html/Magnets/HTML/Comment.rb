@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Comment
+class ::Magnets::HTML::Comment
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
 	attr_required_text  :text
 	attr_alias          :content, :text
@@ -30,10 +30,10 @@ class ::Rmagnets::HTML::Comment
   ##################################################################################################
 
   ##########################
-  #  initialize_html_node  #
+  #  __initialize_html_node__  #
   ##########################
   
-  def initialize_html_node( document_frame )
+  def __initialize_html_node__( document_frame )
         
     return ::Nokogiri::XML::Comment.new( document_frame, padding + text + padding )
     

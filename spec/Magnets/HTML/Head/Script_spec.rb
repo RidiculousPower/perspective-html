@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Head::Script do
+describe ::Magnets::HTML::Head::Script do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Head::Script do
 
   it 'can render an HTML SCRIPT tag (<script ...>)' do
 
-    script = ::Rmagnets::HTML::Head::Script.new
+    script = ::Magnets::HTML::Head::Script.new
 
     script_type  = 'text/javascript'
 

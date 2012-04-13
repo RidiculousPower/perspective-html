@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Text::Paragraph do
+describe ::Magnets::HTML::Text::Paragraph do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Text::Paragraph do
 
   it 'can render an HTML P tag(<p ...>)' do
 
-    paragraph = ::Rmagnets::HTML::Text::Paragraph.new
+    paragraph = ::Magnets::HTML::Text::Paragraph.new
 
     paragraph_content = 'Example!'
 

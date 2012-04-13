@@ -1,7 +1,7 @@
 
-require_relative '../../../../../lib/rmagnets-html.rb'
+require_relative '../../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Table::Row::Header do
+describe ::Magnets::HTML::Table::Row::Header do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Table::Row::Header do
 
   it 'can render an HTML LINK tag(<td ...>)' do
 
-    table_data_header = ::Rmagnets::HTML::Table::Row::Header.new
+    table_data_header = ::Magnets::HTML::Table::Row::Header.new
 
     table_data_header_content = 'Example!'
 

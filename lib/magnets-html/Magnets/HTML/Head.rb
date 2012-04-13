@@ -1,13 +1,13 @@
 
-class ::Rmagnets::HTML::Head
+class ::Magnets::HTML::Head
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'head'
 
-	attr_view	:title, ::Rmagnets::HTML::Head::Title do |title|
+	attr_view	:title, ::Magnets::HTML::Head::Title do |title|
 	  
-	  title.content ||= ::Rmagnets.request ? ::Rmagnets.request.path_info : 'Untitled'
+	  title.content ||= ::Magnets.request ? ::Magnets.request.path_info : 'Untitled'
 		
   end
 	

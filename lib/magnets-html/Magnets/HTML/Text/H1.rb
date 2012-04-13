@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Text::H1
+class ::Magnets::HTML::Text::H1
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'h1'
 

@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Hidden do
+describe ::Magnets::HTML::Form::Hidden do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Hidden do
 
   it 'can render an HTML hidden input tag (<input type="hidden">)' do
 
-    hidden = ::Rmagnets::HTML::Form::Hidden.new
+    hidden = ::Magnets::HTML::Form::Hidden.new
 
     hidden.name = :some_hidden
 

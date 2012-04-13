@@ -1,11 +1,11 @@
 
-require_relative '../../../lib/rmagnets-html.rb'
+require_relative '../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::PageAnchor do
+describe ::Magnets::HTML::PageAnchor do
 
   it 'can render an HTML anchor with a page section (<a href="#...">)' do
     
-    anchor = ::Rmagnets::HTML::PageAnchor.new
+    anchor = ::Magnets::HTML::PageAnchor.new
 
     anchor_subsection = 'example_section'
     anchor_text = 'Example!'

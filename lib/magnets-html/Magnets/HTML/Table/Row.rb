@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Table::Row
+class ::Magnets::HTML::Table::Row
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
   
   ContainerTag = 'tr'
 

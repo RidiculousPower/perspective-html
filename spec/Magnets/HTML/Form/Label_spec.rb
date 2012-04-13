@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Form::Label do
+describe ::Magnets::HTML::Form::Label do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Form::Label do
 
   it 'can render an HTML label tag (<label for="...">)' do
 
-    label = ::Rmagnets::HTML::Form::Label.new
+    label = ::Magnets::HTML::Form::Label.new
 
     label_text  = 'Example!'
     label_for   = 'input_name'

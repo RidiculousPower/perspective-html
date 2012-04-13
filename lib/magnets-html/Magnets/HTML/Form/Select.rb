@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Form::Select
+class ::Magnets::HTML::Form::Select
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'select'
 

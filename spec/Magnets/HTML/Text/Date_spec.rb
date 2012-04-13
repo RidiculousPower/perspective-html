@@ -1,7 +1,7 @@
 
-require_relative '../../../../lib/rmagnets-html.rb'
+require_relative '../../../../lib/magnets-html.rb'
 
-describe ::Rmagnets::HTML::Text::Date do
+describe ::Magnets::HTML::Text::Date do
 
   ##################
   #  to_html_node  #
@@ -9,7 +9,7 @@ describe ::Rmagnets::HTML::Text::Date do
 
   it 'can render an HTML date tag(<span><span>day</span><span>month</span><span>year</span></span>)' do
 
-    date = ::Rmagnets::HTML::Text::Date.new
+    date = ::Magnets::HTML::Text::Date.new
 
     date.day   = 24
     date.month = 5

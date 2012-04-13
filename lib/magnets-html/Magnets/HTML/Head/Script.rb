@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Head::Script
+class ::Magnets::HTML::Head::Script
 	
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'script'
 

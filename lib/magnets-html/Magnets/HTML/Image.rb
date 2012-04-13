@@ -1,7 +1,7 @@
 
-class ::Rmagnets::HTML::Image
+class ::Magnets::HTML::Image
 
-  include ::Rmagnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'img'
 
