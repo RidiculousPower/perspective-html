@@ -3,10 +3,10 @@ class ::Magnets::HTML::Comment
 
   include ::Magnets::View  
 
-	attr_required_text  :text
-	attr_alias          :content, :text
-	attr_alias          :comment, :text
-	attr_text           :padding
+	attr_required_texts  :text
+	attr_alias           :content, :text
+	attr_alias           :comment, :text
+	attr_text            :padding
   
   # accepts multiple string/views
   # * strings => rendered with paragraph breaks

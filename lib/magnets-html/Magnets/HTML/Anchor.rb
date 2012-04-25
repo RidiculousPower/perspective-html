@@ -1,14 +1,14 @@
 
 class ::Magnets::HTML::Anchor
 	
-  include ::Magnets::View  
+  include ::Magnets::View
 
   ContainerTag = 'a'
 
 	attr_required_text   :url
 	attr_alias           :address, :url
 
-	attr_required_view   :text
+	attr_required_views  :text
 	attr_alias					 :content, :text
 
   # FIX - relationships should be moved into methods

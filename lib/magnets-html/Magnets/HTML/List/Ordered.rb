@@ -15,7 +15,7 @@ class ::Magnets::HTML::List::Ordered
 
 	configure do |self_as_html_node|
 
-		if items.is_a?( Array )
+		if items.is_a?( ::Array )
 
 			items.each do |this_item|
 			  add_list_item( self_as_html_node, this_item )

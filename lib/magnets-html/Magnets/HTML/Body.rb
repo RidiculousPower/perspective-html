@@ -6,7 +6,7 @@ class ::Magnets::HTML::Body
   ContainerTag = 'body'
 
 	attr_required_views	 :content
-	attr_view						 :xml_namespace
+	attr_text						 :xml_namespace
 	
 	attr_order		       :content
 

@@ -5,7 +5,7 @@ class ::Magnets::HTML::Text::H1
 
   ContainerTag = 'h1'
 
-	attr_view		:content
+	attr_views	:content
 
 	attr_order	:content
   

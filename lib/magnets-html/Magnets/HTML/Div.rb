@@ -5,7 +5,7 @@ class ::Magnets::HTML::Div
 
   ContainerTag = 'div'
   
-	attr_view	  :content
+	attr_views	:content
 
 	attr_order	:content
 

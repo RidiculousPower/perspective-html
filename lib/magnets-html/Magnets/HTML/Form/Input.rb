@@ -1,16 +1,36 @@
 
-class ::Magnets::HTML::Form::Input
+module ::Magnets::HTML::Form::Input
 
-#  include ::Magnets::View  
+  include ::Magnets::View  
 
   ContainerTag = 'input'
     
-  attr_required_text  :name
-	attr_text	          :value
+  attr_required_text   :name
 
-  attr_order          :name
+	attr_text_or_number	 :value
+  attr_text_or_number  :placeholder
+  attr_view            :suggestions
 
-	###############
+	attr_true_false      :required?,
+	                     :read_only?, :disabled?, 
+	                     :autocomplete?, :autofocus?, 
+	                     :no_validation?, 
+	                     :takes_multiple?
+  
+  attr_number          :minimum_value, :maximum_value
+  # FIX
+  #attr_number_or_date  :minimum_value, :maximum_value
+  attr_number          :step
+  
+  attr_integer         :size, :maximum_length
+
+
+  
+  attr_regexp          :pattern
+  
+  attr_order           :name
+  
+  ###############
   #  configure  #
   ###############
 
@@ -20,9 +40,9 @@ class ::Magnets::HTML::Form::Input
 		  self_as_html_node[ 'name' ] = name.to_s
 		end
 		
-		if value
-		  self_as_html_node[ 'value' ] = value
-		end
+		if suggestions
+		  self_as_html_node[ 'list' ] = suggestions.to_html_node
+	  end
 		
 	end
 	

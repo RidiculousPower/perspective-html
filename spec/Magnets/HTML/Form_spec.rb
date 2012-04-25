@@ -15,7 +15,7 @@ describe ::Magnets::HTML::Form do
 
     form.action = form_action
 
-    form.elements = ::Magnets::HTML::Form::Input.new
+    form.elements = ::Magnets::HTML::Form::Input::Text.new
     form.elements.name = :some_input
 
     form_html_node = form.to_html_node

@@ -7,7 +7,7 @@ class ::Magnets::HTML::PageAnchor
   
 	attr_required_text   :subsection
 
-	attr_required_view   :text
+	attr_required_views  :text
 	attr_alias					 :content, :text
 
 	attr_order           :content

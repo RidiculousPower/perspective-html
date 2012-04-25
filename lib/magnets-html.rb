@@ -2,7 +2,11 @@
 require_relative '../../view/lib/magnets-view.rb'
 
 module ::Magnets
-	module HTML
+	class HTML
+	  module Configuration
+	    module Lists
+      end
+    end
 		module Abstract
 		end
 		class Anchor
@@ -19,34 +23,37 @@ module ::Magnets
 		class Div
 		end
 		class Form
-			class Input
+			module Input
   		  include ::Magnets::View
-			end
-			class Checkbox < ::Magnets::HTML::Form::Input
-			end
-			class Error
-			end
-			class FileUpload < ::Magnets::HTML::Form::Input
-			end
-			class Hidden < ::Magnets::HTML::Form::Input
-			end
-			class Image < ::Magnets::HTML::Form::Input
-			end
-			class Label
-			end
-			class Option
-			end
-			class Password < ::Magnets::HTML::Form::Input
-			end
-			class Radio < ::Magnets::HTML::Form::Input
-			end
-			class Reset < ::Magnets::HTML::Form::Input
-			end
-			class Select
-			end
-			class Submit < ::Magnets::HTML::Form::Input
-			end
-			class TextArea < ::Magnets::HTML::Form::Input
+  			class Checkbox
+  			end
+  			class Error
+  			end
+  			class FileUpload
+  			end
+  			class Hidden
+  			end
+  			class Image
+  			end
+  			class Label
+  			end
+  			class Password
+  			end
+  			class Radio
+  			end
+  			class Reset
+  			end
+  			class Select
+  			end
+  			class Submit
+    			class Option
+    			end
+  			end
+  			class Text
+    		  include ::Magnets::HTML::Form::Input
+    			class Area < ::Magnets::HTML::Form::Input::Text
+    			end
+  			end
 			end
 		end
 		class Head
@@ -109,65 +116,67 @@ module ::Magnets
 	end
 end
 
-require_relative 'magnets-html/Magnets/HTML/Head/Base.rb'
-require_relative 'magnets-html/Magnets/HTML/Head/Link.rb'
-require_relative 'magnets-html/Magnets/HTML/Head/Meta.rb'
-require_relative 'magnets-html/Magnets/HTML/Head/Script.rb'
-require_relative 'magnets-html/Magnets/HTML/Head/Style.rb'
-require_relative 'magnets-html/Magnets/HTML/Head/Title.rb'
-require_relative 'magnets-html/Magnets/HTML/Head.rb'
+basepath = 'magnets-html/Magnets/HTML'
 
-require_relative 'magnets-html/Magnets/HTML/Form/Input.rb'
+files = [
 
-require_relative 'magnets-html/Magnets/HTML/Body.rb'
+  'Head/Base',
+  'Head/Link',
+  'Head/Meta',
+  'Head/Script',
+  'Head/Style',
+  'Head/Title',
+  'Head',
+  'Form/Input',
+  'Body',
+  'Anchor',
+  'PageAnchor',
+  'Button',
+  'Comment',
+  'Div',
+  'Form',
+  'Form/Input/Text',
+  'Form/Input/Text/Area',
+  'Form/Input/Checkbox',
+  'Form/Input/Error',
+  'Form/Input/FileUpload',
+  'Form/Input/Hidden',
+  'Form/Input/Label',
+  'Form/Input/Password',
+  'Form/Input/Radio',
+  'Form/Input/Reset',
+  'Form/Input/Select',
+  'Form/Input/Select/Option',
+  'Form/Input/Submit',
+  'HR',
+  'Image',
+  'List/Item',
+  'List/Ordered',
+  'List/Unordered',
+  'MailTo',
+  'Table/Row/Header',
+  'Table/Row/Data',
+  'Table/Row',
+  'Table',
+  'Text/H1',
+  'Text/H2',
+  'Text/H3',
+  'Text/H4',
+  'Text/H5',
+  'Text/H6',
+  'Text/Paragraph',
+  'Text/Span',
+  'Text/Date',
+  'Configuration/Lists',
+]
 
-require_relative 'magnets-html/Magnets/HTML/Anchor.rb'
-require_relative 'magnets-html/Magnets/HTML/PageAnchor.rb'
-require_relative 'magnets-html/Magnets/HTML/Button.rb'
-require_relative 'magnets-html/Magnets/HTML/Comment.rb'
-require_relative 'magnets-html/Magnets/HTML/Div.rb'
-require_relative 'magnets-html/Magnets/HTML/Form.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Checkbox.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Error.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/FileUpload.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Hidden.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Image.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Label.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Option.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Password.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Radio.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Reset.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Select.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/Submit.rb'
-require_relative 'magnets-html/Magnets/HTML/Form/TextArea.rb'
+files.each do |this_file|
+  require_relative( File.join( basepath, this_file ) + '.rb' )
+end
 
-require_relative 'magnets-html/Magnets/HTML/HR.rb'
-require_relative 'magnets-html/Magnets/HTML/Image.rb'
+require_relative( basepath + '.rb' )
 
+::Magnets::Configuration.register_configuration( :lists, ::Magnets::HTML::Configuration::Lists )
 
-require_relative 'magnets-html/Magnets/HTML/List/Item.rb'
-require_relative 'magnets-html/Magnets/HTML/List/Ordered.rb'
-require_relative 'magnets-html/Magnets/HTML/List/Unordered.rb'
-
-require_relative 'magnets-html/Magnets/HTML/MailTo.rb'
-
-
-require_relative 'magnets-html/Magnets/HTML/Table/Row/Header.rb'
-require_relative 'magnets-html/Magnets/HTML/Table/Row/Data.rb'
-require_relative 'magnets-html/Magnets/HTML/Table/Row.rb'
-require_relative 'magnets-html/Magnets/HTML/Table.rb'
-
-require_relative 'magnets-html/Magnets/HTML/Text/H1.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/H2.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/H3.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/H4.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/H5.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/H6.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/Paragraph.rb'
-require_relative 'magnets-html/Magnets/HTML/Text/Span.rb'
-
-require_relative 'magnets-html/Magnets/HTML/HTML.rb'
-
-require_relative 'magnets-html/Magnets/Document.rb'
-
-require_relative 'magnets-html/Magnets/HTML/Text/Date.rb'
+# Convenience reference
+::HTML = ::Magnets::HTML
