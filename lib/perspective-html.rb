@@ -1,12 +1,12 @@
 
 begin ; require 'development' ; rescue ::LoadError ; end
 
-require 'magnets/html/view'
-require 'magnets/html/elements'
-require 'magnets/html/view/model'
-require 'magnets/html/form'
+require 'perspective/html/view'
+require 'perspective/html/elements'
+require 'perspective/html/view/model'
+require 'perspective/html/form'
 
-basepath = 'magnets-html/Magnets/HTML'
+basepath = 'perspective/html/Perspective/HTML'
 
 files = [
   

@@ -1,12 +1,12 @@
 
-module ::Magnets::HTML::Elements::Attributes
+module ::Perspective::HTML::Elements::Attributes
   
-  module ::Magnets::Bindings::AttributeContainer::HTMLView
+  module ::Perspective::Bindings::AttributeContainer::HTMLView
 
     # We aren't defining a new module type in HTML::Elements, so we create binding types directly
     # in the AttributeContainer already created for HTML::View.
   
-    base = ::Magnets::HTML::Elements
+    base = ::Perspective::HTML::Elements
   
     define_binding_type( :head ).__view_class__ = base::Head
     define_binding_type( :base ).__view_class__ = base::Head::Base
